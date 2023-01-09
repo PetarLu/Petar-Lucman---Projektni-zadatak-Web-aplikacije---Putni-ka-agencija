@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+     		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<title>Kontakt</title>
+		<link rel="icon" type="image/x-icon" href="img/Favicon.ico">
+	</head>
+	<body>
+	<header>
+		<div class="hero-image" style="height: 200px;"></div>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="novosti.html">Novosti</a></li>
+			  <li><a href="kontakt.html">Kontakt</a></li>
+			  <li><a href="o nama.html">O nama</a></li>
+			  <li><a href="galerija.html">Galerija</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Kontakt</h1>
+		<div id="contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.7890741539636!2d15.966758816056517!3d45.795453279106205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d68b5d094979%3A0xda8bfa8459b67560!2sUl.+Vrbik+VIII%2C+10000%2C+Zagreb!5e0!3m2!1shr!2shr!4v1509296660756" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+			<p>Adresa: Zagreb, Hrvatska</p>
+			<p>Radno vrijeme: 8:00-16:00</p>
+			<p>Kontakt: 0800 9000</p>
+			<p>E-mail: info@putnickaagencija.hr</p>
+			
+			
+				<label for="fname">Ime *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Ime.." required>
+
+				<label for="lname">Prezime *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Prezime.." required>
+				
+				<label for="lname">E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="E-mail.." required>
+
+				<label for="country">Država</label>
+				<select id="country" name="country">
+				  <option value="">Odaberi</option>
+				  <option value="BE">Belgija</option>
+				  <option value="HR" selected>Hrvatska</option>
+				  <option value="LU">Luksemburg</option>
+				  <option value="HU">Mađarska</option>
+				</select>
+
+				<label for="subject">Poruka</label>
+				<textarea id="subject" name="subject" placeholder="Poruka.." style="height:200px"></textarea>
+
+				<input type="submit" value="Pošalji">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023 Petar Lucman. <a href="https://github.com/PetarLu?tab=repositories"><img src="img/GitHub-Mark-Light-32px.png" title="Github" alt="Github"></a></p>
+	</footer>
+</body>
+</html>
